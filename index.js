@@ -14,9 +14,12 @@ function renderStudents(students) {
   const container = document.getElementById("students-container");
 
   container.innerHTML = students.map(
-    (student) => `<h1>${student.name}</h1>
-      <h3>${student.id}</h3>
-      <p>${student.bio}</p>
+    (student) => `<div class=cards>
+    <h1 class="title">${student.name}</h1>
+      <h3 class="id">${student.id}</h3>
+      <p class="bio">${student.bio}</p>
+    
+    </div>
   `
   );
   // join to avoid commas in HTML
